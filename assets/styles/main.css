@@ -1,0 +1,295 @@
+/* Main.css */
+html, .content-wrapper{
+	height: 100%;
+}
+body{
+	height: 100%;
+	padding-top: 51px;
+	background-color: #dee6ec;
+}
+textarea{
+	resize: none;
+}
+.hide{
+	display: none;
+}
+html body .allow-cursor{
+	cursor: default;
+}
+.highlight{
+	background-color: #0f4061 !important;
+	color: #fff;
+}
+.no-content-message{
+	display: inline-block;
+	margin-left: 5px;
+}
+/* Navigation CSS Start */
+.navbar-default{
+	box-shadow: none;
+	border-bottom: 2px solid #dadada;
+}
+.navbar-brand{
+	display: inline-block;
+	padding: 8px;
+	margin-left: 5%;
+}
+.company-logo{
+	width: 150px;
+	margin: 0;
+}
+.navbar-title{
+	font-size: 1.25em;
+	line-height: 34px;
+}
+/* Navigation CSS End */
+/* Main Content CSS Start */
+.main-content-wrapper{
+	height: 100%;
+	margin: 0;
+}
+.project-list-wrapper, .bug-list-wrapper, .bug-detail-wrapper{
+	border-right: 1px solid #bbb;
+	padding: 20px;
+	height: 100%;
+	overflow: auto;
+	box-shadow: 1px 0 1px #fff
+}
+.cancel-icon{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url('../images/cancel-icon.png') 0 0 no-repeat;
+	cursor: pointer;
+}
+.project, .bug{
+	position: relative;
+	margin-top: 20px;
+	height: 50px;
+	line-height: 50px;
+	list-style: none;	
+	cursor: pointer;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.project:hover, .bug:hover{
+	background-color: #116291;
+	color: #fff;
+}
+/* Main Content CSS End */
+/* Project List Start */
+.project-list .projects{
+	padding: 0;
+}
+.project-list .title-wrapper{
+	position: relative;
+	margin-bottom: 20px;
+}
+.project-list .toggle-btn{
+	right: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.project-list .project-list-title{
+	font-weight: bold;
+	font-size: 28px;
+	vertical-align: middle;
+	color: #666;
+}
+.project-list .project-list-input{
+	position: relative;
+	margin-top: 20px;
+}
+.project-list .add-project-form-wrapper{
+	padding: 5%;
+	padding-top: 3%;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.project-list .add-project-form-wrapper input{
+	margin-right: 3%;
+}
+.project-list .ui-effects-wrapper input{
+	border-color: #d9534f;
+}
+.project-list input[type="text"]{
+	display: block;
+}
+.project-list .closed-label{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+/* Project List End */
+/* Made By Rhadow.github.io */
+.navbar .maker{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+/* Bug List Start */
+.bug-list .bug-list-title{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 28px;
+	vertical-align: middle;
+	color: #666;
+}
+.bug-list .bug-list-inputs{
+	position: relative;
+	margin-top: 20px;
+}
+.bug-list .title-wrapper{
+	position: relative;
+	margin-bottom: 20px;
+}
+.bug-list .close-project-btn{
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	margin-left: 10px;
+}
+.bug-list .toggle-btn{
+	display: inline-block;
+}
+.bug-list .priority-filter{
+	position: absolute;
+	top: 6px;
+	right: 140px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bug-list .bugs{
+	padding: 0;
+}
+.bug-list .bug-status{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.bug-list .add-bug-form-wrapper{
+	margin-top: 20px;
+	padding: 5%;
+	padding-top: 3%;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.bug-list .add-bug-form-wrapper input[type="button"]{
+	margin-right: 3%;
+}
+.bug-list .ui-effects-wrapper .bug-name-input{
+	border-color: #d9534f;
+}
+.bug-list .ui-effects-wrapper .bug-description-input{
+	border-color: #d9534f;
+}
+.bug-list .ui-effects-wrapper .bug-author-input{
+	border-color: #d9534f;
+}
+.bug-list input[type="text"]{
+	display: block;
+}
+/* Bug List End */
+/* Bug Detail Start */
+.bug-detail .ui-effects-wrapper .comment-description-input{
+	border-color: #d9534f;
+}
+.bug-detail .ui-effects-wrapper .comment-author-input{
+	border-color: #d9534f;
+}
+.bug-detail .title-wrapper{
+	position: relative;
+	margin-bottom: 20px;
+}
+.bug-detail .comment-list-title{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 28px;
+	vertical-align: middle;
+	color: #666;
+}
+.bug-detail .comment-list-inputs{
+	position: relative;
+	margin-top: 20px;
+}
+.bug-detail .toggle-btn{
+	display: inline-block;
+}
+.bug-detail .close-bug-btn{	
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	margin-left: 10px;
+}
+.bug-detail .add-comment-form-wrapper{
+	padding: 5%;
+	padding-top: 3%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.bug-detail .add-comment-form-wrapper input[type="button"]{
+	margin-right: 3%;
+}
+/* Bug Detail End */
+/* Bug Info Start */
+.bug-info{
+	padding: 5%;
+	padding-top: 3%;
+	margin-bottom: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.bug-info textarea{
+	margin-bottom: 10px;
+	cursor: default !important;
+}
+.bug-info .info-value{
+	display: inline-block;
+	margin-left: 5px;
+}
+/* Bug Info End */
+/* all rights reserved to Howard Chang */
+/* Comment Start */
+.comment{
+	margin: 20px 0;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgba(20%,20%,40%,0.3);
+}
+.comment .comment-header{
+	background-color: #eee;
+	border-bottom: 1px solid #bbb;
+	padding: 2% 5%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.comment .comment-author{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 16px;
+}
+.comment .comment-time{
+	display: inline-block;
+	margin-left: 10px;
+	color: #666;
+}
+.comment .comment-body{
+	padding: 2% 5%;
+}
+/* Comment End */
+/* Animation Start */
+/* Animation End */
